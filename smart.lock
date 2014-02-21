@@ -1,0 +1,25 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "twit": {
+        "version": "0.2.0"
+      },
+      "reveal-js": {
+        "version": "1.0.1"
+      }
+    },
+    "packages": {
+      "twit": {
+        "git": "https://github.com/subhog/meteor-twit.git",
+        "tag": "v0.2.0",
+        "commit": "3eb473f9efef8c77ae6a8eb6715fbdf93c4d87c0"
+      },
+      "reveal-js": {
+        "git": "https://github.com/neo-technologies/meteor-reveal-js.git",
+        "tag": "v1.0.1",
+        "commit": "b4539e93ab03ddf01a9e6a35950b7a9d123b6cda"
+      }
+    }
+  }
+}
