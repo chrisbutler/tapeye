@@ -4,7 +4,7 @@
     }
   });
 
-  Template.tweets.rendered = function () {
+  Template.twitterFeed.rendered = function () {
     Reveal.initialize();
     var i = Tweets.find().fetch().length;
     Reveal.slide(i-2);

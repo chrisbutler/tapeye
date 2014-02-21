@@ -4,12 +4,15 @@
 
 <body>
   <div class="reveal">
-    <div class="slides">
-      {{> tweets}}
-    </div>
+    {{> twitterFeed}}
   </div>
-</div>
 </body>
+
+<template name="twitterFeed">
+  <div class="slides">
+    {{> tweets}}
+  </div>
+</template>
 
 <template name="tweets">
   {{#each list}}
