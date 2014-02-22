@@ -1,6 +1,7 @@
 {
   "packages": {
     "twit": {},
-    "reveal-js": {}
+    "reveal-js": {},
+    "livestamp-hs": {}
   }
 }

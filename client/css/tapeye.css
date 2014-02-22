@@ -1,5 +1,60 @@
-/* CSS declarations go here */
-
-section.tweet {
-  font-size: 96px;
+.page-wrapper {
+  height: 75%;
 }
+
+.reveal.cube section.tweet {
+  padding: 100px;
+}
+
+section.tweet h1, section.tweet h2, section.tweet h3, section.tweet h4 {
+  font-size: 96px;
+  font-family: 'Proxima Nova', 'Myriad', helvetica, arial, sans-serif;
+  font-weight: bold;
+  color: #999;
+  text-align: left;
+  text-shadow: 1px 4px 6px #fff, 0 0 0 #000, 1px 4px 6px #fff;
+
+}
+
+section.tweet h2 {
+  margin-top: 72px;
+  font-size: 64px;
+  text-align: right;
+}
+
+section.tweet h3 {
+  font-size: 24px;
+  text-align: right;
+}
+
+section.tweet h4 {
+  font-size: 32px;
+  text-align: left;
+  margin-bottom: 18px;
+}
+ 
+/* h1 {
+  text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}*/
+
+/*h2 {
+  text-shadow: rgb(187, 187, 187) 0px 1px 0px,
+    rgb(181, 181, 181) 0px 2px 0px,
+    rgb(172, 172, 172) 0px 3px 0px,
+    rgb(160, 160, 160) 0px 4px 0px,
+    rgb(145, 145, 145) 0px 5px 0px,
+    rgb(127, 127, 127) 0px 6px 0px,
+    rgba(0, 0, 0, 0.199219) 0px 7px 1px,
+    rgba(0, 0, 0, 0.296875) 0px 8px 6px;
+}*/

@@ -11,3 +11,7 @@ stream.on('tweet', Meteor.bindEnvironment(function (tweet) {
   if (tweet)
     Tweets.insert(tweet);
 }));
+
+stream.on('favorite', Meteor.bindEnvironment(function (tweet) {
+  console.log(tweet);
+}));
