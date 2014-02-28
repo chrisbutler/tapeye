@@ -1,13 +1,61 @@
 .page-wrapper {
-  height: 75%;
+  height: 80%;
+  font-size: 18px;
+}
+
+.mentions {
+  width: 90%;
+  height: 20%;
+  position: fixed;
+  bottom: 0;
+  background: #333;
+  color: white;
+  padding: 15px 5%;
+}
+
+.mentions section.tweet h1 {
+  font-family: 'Proxima Nova', 'Myriad', helvetica, arial, sans-serif;
+  font-size: 24px;
+  margin: 0;
+  text-shadow: none;
+}
+
+.mentions section.tweet h2 {
+  font-family: 'Proxima Nova', 'Myriad', helvetica, arial, sans-serif;
+  font-size: 12px;
+  margin: 0;
+  text-shadow: none;
+  text-align: right;
+}
+
+.mentions section.tweet h3 {
+  font-family: 'Proxima Nova', 'Myriad', helvetica, arial, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  text-shadow: none;
+  text-align: right;
+}
+.mentions section.tweet h4 {
+  font-family: 'Proxima Nova', 'Myriad', helvetica, arial, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  text-shadow: none;
+}
+
+.mentions section {
+  display: none;
+}
+
+.mentions section:last-child {
+  display: block;
 }
 
 .reveal.cube section.tweet {
   padding: 100px;
 }
 
-section.tweet h1, section.tweet h2, section.tweet h3, section.tweet h4 {
-  font-size: 96px;
+.tweet-feed section.tweet h1, .tweet-feed section.tweet h2, .tweet-feed section.tweet h3, .tweet-feed section.tweet h4 {
+  font-size: 76px;
   font-family: 'Proxima Nova', 'Myriad', helvetica, arial, sans-serif;
   font-weight: bold;
   color: #999;
@@ -16,18 +64,18 @@ section.tweet h1, section.tweet h2, section.tweet h3, section.tweet h4 {
 
 }
 
-section.tweet h2 {
+.tweet-feed section.tweet h2 {
   margin-top: 72px;
   font-size: 64px;
   text-align: right;
 }
 
-section.tweet h3 {
+.tweet-feed section.tweet h3 {
   font-size: 24px;
   text-align: right;
 }
 
-section.tweet h4 {
+.tweet-feed section.tweet h4 {
   font-size: 32px;
   text-align: left;
   margin-bottom: 18px;

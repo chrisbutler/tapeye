@@ -5,11 +5,19 @@ Twit = new TwitMaker({
   access_token_secret:  'LpFYTbsdXvu8HBdInBi5FS6cjBIrh8OEB7l1kHEhyv05k'
 });
 
-var stream = Twit.stream('statuses/filter', {follow: '1592123647'});
+var stream = Twit.stream('statuses/filter', {follow: '18378349'});
 
 stream.on('tweet', Meteor.bindEnvironment(function (tweet) {
-  if (tweet)
-    Tweets.insert(tweet);
+  if (tweet) {
+    console.log(tweet);
+    if(tweet.retweeted_status) {
+      Retweets.insert(tweet);
+    } else if (tweet.in_reply_to_user_id == 18378349) {
+      Mentions.insert(tweet);
+    } else {
+      Tweets.insert(tweet);
+    }
+  }
 }));
 
 stream.on('favorite', Meteor.bindEnvironment(function (tweet) {

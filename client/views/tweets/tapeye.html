@@ -4,20 +4,29 @@
 
 <body>
   <div class="page-wrapper">
-    <div class="reveal">
-      {{> twitterFeed}}
+    <div class="reveal tweet-feed">
+      {{> tweetFeed}}
+    </div>
+    <div class="mentions">
+      {{> mentionFeed}}
     </div>
   </div>
 </body>
 
-<template name="twitterFeed">
+<template name="tweetFeed">
   <div class="slides">
-    {{> tweets}}
+    {{> tweets list}}
+  </div>
+</template>
+
+<template name="mentionFeed">
+  <div class="slides">
+    {{> tweets list}}
   </div>
 </template>
 
 <template name="tweets">
-  {{#each list}}
+  {{#each this}}
     <section class="tweet">
       <h4>{{livestamp created_at}}</h4>
       <h1>{{text}}</h1>

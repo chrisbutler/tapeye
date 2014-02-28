@@ -1,11 +1,17 @@
-  Template.tweets.helpers({
+  Template.tweetFeed.helpers({
     list: function() {
       return Tweets.find();
     }
   });
 
-  Template.twitterFeed.rendered = function () {
-    Reveal.initialize({transition:'zoom'});
+  Template.mentionFeed.helpers({
+    list: function() {
+      return Mentions.find();
+    }
+  });
+
+  Template.tweetFeed.rendered = function () {
+    Reveal.initialize({transition:'fade', controls:false});
     var i = Tweets.find().fetch().length;
     Reveal.slide(i-2);
     Meteor.setTimeout(function(){
