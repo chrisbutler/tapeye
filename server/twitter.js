@@ -12,7 +12,7 @@ stream.on('tweet', Meteor.bindEnvironment(function (tweet) {
     console.log(tweet);
     if(tweet.retweeted_status) {
       Retweets.insert(tweet);
-    } else if (tweet.in_reply_to_user_id == 18378349) {
+    } else if (tweet.in_reply_to_user_id != null) {
       Mentions.insert(tweet);
     } else {
       Tweets.insert(tweet);
