@@ -11,7 +11,7 @@
   });
 
   Template.tweetFeed.rendered = function () {
-    Reveal.initialize({transition:'fade', controls:false});
+    Reveal.initialize({transition:'carousel', controls:false});
     var i = Tweets.find().fetch().length;
     Reveal.slide(i-2);
     Meteor.setTimeout(function(){

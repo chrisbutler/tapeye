@@ -5,7 +5,7 @@ Twit = new TwitMaker({
   access_token_secret:  'LpFYTbsdXvu8HBdInBi5FS6cjBIrh8OEB7l1kHEhyv05k'
 });
 
-var stream = Twit.stream('statuses/filter', {follow: '18378349'});
+var stream = Twit.stream('statuses/filter', {follow: '1592123647'});
 
 stream.on('tweet', Meteor.bindEnvironment(function (tweet) {
   if (tweet) {
